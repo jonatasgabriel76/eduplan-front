@@ -1,0 +1,58 @@
+<div class="row">
+  <div class="col-md-12">
+
+    <!-- AQUI -->
+    <a class="btn btn-primary" [routerLink]="['/docente/novo']">
+      <i class="fa fa-plus"></i>
+      <span>Novo</span>
+    </a>
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <section class="panel">
+      <div class="panel-body">
+        <table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="table table-striped table-bordered dataTable">
+          <thead>
+
+            <!-- AQUI -->
+            <tr>
+              <th>Perfil</th>
+              <th>Nome</th>
+              <th class="no-sort text-center">Ações</th>
+            </tr>
+
+          </thead>
+          <tbody>
+
+            <!-- AQUI -->
+            <tr *ngFor="let docente of docentes; let i = index">
+              <td>{{docente.perfil}}</td>
+              <td><a [routerLink]="['/docente/visualizar', docente.id]">{{docente.nome}}</a></td>
+              <td class="text-center">
+                <a class="btn btn-default" rel="tooltip" data-placement="top" [routerLink]="['/docente/alterar', docente.id]" title="" data-original-title="Alterar">
+                  <i class="fa fa-pencil"></i>
+                </a>
+                <a class="btn btn-default modal-confirm" (click)="openModal(template, docente, i)" data-url="#">
+                  <i class="fa fa-trash"></i>
+                </a>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+
+        <ng-template #template>
+          <div class="modal-body text-center">
+            <p>Deseja realmente excluir a docente {{selectedDocente.nome}}</p>
+            <button type="button" class="btn btn-default" (click)="deleteDocente()">Sim</button>
+            <button type="button" class="btn btn-primary" (click)="hideModal()">Não</button>
+          </div>
+        </ng-template>
+
+      </div>
+    </section>
+  </div>
+</div>

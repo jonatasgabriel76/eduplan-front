@@ -1,0 +1,86 @@
+<form [formGroup]="planoDeEnsinoForm" novalidate>
+  <div class="panel">
+    <div class="panel-body">
+
+      <div class="row">
+
+        <div class="col-xs-4">
+          <input-container label="Disciplina">
+            <input type="text" class="form-control" formControlName="disciplina">
+          </input-container>
+        </div>
+
+        <!-- <div class="col-xs-4">
+          <input-container label="Docente"><br>
+            <select class="form-control" formControlName="docente" [compareWith]="compareFn">
+              <option *ngFor="let d of docentes" [ngValue]="d">{{ d.nome }}</option>
+            </select>
+          </input-container>
+        </div> -->
+
+        <div class="col-xs-4">
+          <input-container label="Docente">
+            <input type="text" class="form-control" formControlName="docente">
+          </input-container>
+        </div>
+
+        <div class="col-xs-4">
+          <input-container label="Caraga Horaria Teorica">
+            <input type="text" class="form-control" formControlName="chteorica">
+          </input-container>
+        </div>
+
+        <div class="col-xs-4">
+          <input-container label="Carga Horaria Pratica">
+            <input type="text" class="form-control" formControlName="chpratica">
+          </input-container>
+        </div>
+
+        <div class="col-xs-4">
+          <input-container label="Carga Horaria Total">
+            <input type="text" class="form-control" formControlName="chtotal">
+          </input-container>
+        </div>
+
+        <div class="col-xs-4">
+          <input-container label="Creditos">
+            <input type="text" class="form-control" formControlName="creditos">
+          </input-container>
+        </div>
+
+        <div class="col-xs-4">
+          <input-container label="Periodo">
+            <input type="text" class="form-control" formControlName="periodo">
+          </input-container>
+        </div>
+
+        <div class="col-xs-4">
+          <input-container label="Turno">
+            <input type="text" class="form-control" formControlName="turno">
+          </input-container>
+        </div>
+
+        <div class="col-xs-4">
+          <input-container label="Ano">
+            <input type="text" class="form-control" formControlName="ano">
+          </input-container>
+        </div>
+
+        <div class="col-xs-4">
+          <input-container label="Semestre">
+            <input type="text" class="form-control" formControlName="semestre">
+          </input-container>
+        </div>
+
+      </div>
+    </div>
+    <div class="panel-footer">
+      <button [routerLink]="['/plano-de-ensino/alterar', planoDeEnsino.id]" class="btn btn-primary">
+        Alterar
+      </button>
+      <button [routerLink]="['/plano-de-ensino/']" class="btn btn-default">
+        Voltar
+      </button>
+    </div>
+  </div>
+</form>

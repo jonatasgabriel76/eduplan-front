@@ -1,0 +1,99 @@
+<form [formGroup]="planoDeEnsinoForm" novalidate>
+  <div class="panel">
+
+    <div class="panel-body">
+      <div class="row">
+
+
+        <div class="col-xs-4">
+          <input-container label="Disciplina">
+            <input type="text" class="form-control" placeholder="disciplina" formControlName="disciplina" autocomplete="off">
+          </input-container>
+        </div>
+
+        <div class="col-xs-4">
+          <input-container label="Docente"><br>
+            <select formControlName="docente" class="form-control" [compareWith]="compareFn">
+              <option *ngFor="let d of docentes" [ngValue]="d">{{ d.nome }}</option>
+            </select>
+          </input-container>
+        </div>
+
+        <!-- <div class="col-xs-4">
+          <input-container label="Docente">
+            <input type="text" class="form-control" placeholder="docente" formControlName="docente" autocomplete="off">
+          </input-container>
+        </div> -->
+
+        <div class="col-xs-4">
+          <input-container label="Caraga Horaria Teorica">
+            <input type="text" class="form-control" placeholder="chteorica" formControlName="chteorica" autocomplete="off">
+          </input-container>
+        </div>
+
+        <div class="col-xs-4">
+          <input-container label="Carga Horaria Pratica">
+            <input type="text" class="form-control" placeholder="chpratica" formControlName="chpratica" autocomplete="off">
+          </input-container>
+        </div>
+
+        <div class="col-xs-4">
+          <input-container label="Carga Horaria Total">
+            <input type="text" class="form-control" placeholder="chtotal" formControlName="chtotal" autocomplete="off">
+          </input-container>
+        </div>
+
+        <div class="col-xs-4">
+          <input-container label="Creditos">
+            <input type="text" class="form-control" placeholder="creditos" formControlName="creditos" autocomplete="off">
+          </input-container>
+        </div>
+
+        <div class="col-xs-4">
+          <input-container label="Periodo">
+            <input type="text" class="form-control" placeholder="periodo" formControlName="periodo" autocomplete="off">
+          </input-container>
+        </div>
+
+        <div class="col-xs-4">
+            <input-container label="Turno"><br>
+              <select formControlName="turno" class="form-control">
+                <option value="matutino">Matutino</option>
+                <option value="vespertino">Vespertino</option>
+                <option value="noturno">Noturno</option>
+              </select>
+            </input-container>
+          </div>
+
+        <!-- <div class="col-xs-4">
+          <input-container label="Turno">
+            <input type="text" class="form-control" placeholder="turno" formControlName="turno" autocomplete="off">
+          </input-container>
+        </div> -->
+
+        <div class="col-xs-4">
+          <input-container label="Ano">
+            <input type="text" class="form-control" placeholder="ano" formControlName="ano" autocomplete="off">
+          </input-container>
+        </div>
+
+        <div class="col-xs-4">
+          <input-container label="Semestre">
+            <input type="text" class="form-control" placeholder="semestre" formControlName="semestre" autocomplete="off">
+          </input-container>
+        </div>
+
+      </div>
+    </div>
+    <div class="panel-footer">
+      <button (click)="salvar(planoDeEnsinoForm.value)" [disabled]="!planoDeEnsinoForm.valid" class="btn btn-success">
+        Salvar
+      </button>
+      <button [routerLink]="['/plano-de-ensino/']" class="btn btn-default">
+        Voltar
+      </button>
+    </div>
+  </div>
+</form>
+
+<pre>{{ planoDeEnsinoForm.value | json }}</pre>

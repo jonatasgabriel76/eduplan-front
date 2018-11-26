@@ -1,0 +1,49 @@
+
+<form [formGroup]="docenteForm" novalidate>
+  <div class="panel">
+    <div class="panel-body">
+
+      <div class="row">
+
+        <div class="col-xs-6">
+          <input-container label="Nome">
+          <input type="text" class="form-control" formControlName="nome">
+          </input-container>
+        </div>
+
+        <div class="col-xs-6">
+          <input-container label="E-mail">
+            <input type="text" class="form-control" formControlName="email">
+          </input-container>
+        </div>
+
+        <div class="col-xs-6">
+          <input-container label="Senha">
+            <input type="password" class="form-control" formControlName="senha">
+          </input-container>
+        </div>
+
+        <div class="col-xs-6">
+          <input-container label="Matricula">
+          <input type="text" class="form-control" formControlName="matricula">
+          </input-container>
+        </div>
+
+        <div class="col-xs-6">
+          <input-container label="Perfil">
+            <input type="text" class="form-control" formControlName="perfil">
+          </input-container>
+        </div>
+
+      </div>
+    </div>
+    <div class="panel-footer">
+      <button [routerLink]="['/docente/alterar', docente.id]" class="btn btn-primary">
+        Alterar
+      </button>
+      <button [routerLink]="['/docente/']" class="btn btn-default">
+        Voltar
+      </button>
+    </div>
+  </div>
+</form>

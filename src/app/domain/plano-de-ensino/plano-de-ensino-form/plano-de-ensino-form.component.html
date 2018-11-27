@@ -2,12 +2,14 @@
   <div class="panel">
 
     <div class="panel-body">
+
+      <fieldset><legend>Identificação</legend>
       <div class="row">
 
 
         <div class="col-xs-4">
           <input-container label="Disciplina">
-            <input type="text" class="form-control" placeholder="disciplina" formControlName="disciplina" autocomplete="off">
+            <input type="text" class="form-control" placeholder="Disciplina" formControlName="disciplina" autocomplete="off">
           </input-container>
         </div>
 
@@ -26,32 +28,32 @@
         </div> -->
 
         <div class="col-xs-4">
-          <input-container label="Caraga Horaria Teorica">
-            <input type="text" class="form-control" placeholder="chteorica" formControlName="chteorica" autocomplete="off">
+          <input-container label="Caraga Horária Teórica">
+            <input type="text" class="form-control" placeholder="Carga Horária Teórica" formControlName="chteorica" autocomplete="off">
           </input-container>
         </div>
 
         <div class="col-xs-4">
-          <input-container label="Carga Horaria Pratica">
-            <input type="text" class="form-control" placeholder="chpratica" formControlName="chpratica" autocomplete="off">
+          <input-container label="Carga Horária Prática">
+            <input type="text" class="form-control" placeholder="Carga Horária Prática" formControlName="chpratica" autocomplete="off">
           </input-container>
         </div>
 
         <div class="col-xs-4">
-          <input-container label="Carga Horaria Total">
-            <input type="text" class="form-control" placeholder="chtotal" formControlName="chtotal" autocomplete="off">
+          <input-container label="Carga Horária Total">
+            <input type="text" class="form-control" placeholder="Carga Horária Total" formControlName="chtotal" autocomplete="off">
           </input-container>
         </div>
 
         <div class="col-xs-4">
-          <input-container label="Creditos">
-            <input type="text" class="form-control" placeholder="creditos" formControlName="creditos" autocomplete="off">
+          <input-container label="Créditos">
+            <input type="text" class="form-control" placeholder="Créditos" formControlName="creditos" autocomplete="off">
           </input-container>
         </div>
 
         <div class="col-xs-4">
-          <input-container label="Periodo">
-            <input type="text" class="form-control" placeholder="periodo" formControlName="periodo" autocomplete="off">
+          <input-container label="Período">
+            <input type="text" class="form-control" placeholder="Período" formControlName="periodo" autocomplete="off">
           </input-container>
         </div>
 
@@ -73,17 +75,175 @@
 
         <div class="col-xs-4">
           <input-container label="Ano">
-            <input type="text" class="form-control" placeholder="ano" formControlName="ano" autocomplete="off">
+            <input type="text" class="form-control" placeholder="Ano" formControlName="ano" autocomplete="off">
           </input-container>
         </div>
 
         <div class="col-xs-4">
           <input-container label="Semestre">
-            <input type="text" class="form-control" placeholder="semestre" formControlName="semestre" autocomplete="off">
+            <input type="text" class="form-control" placeholder="Semestre" formControlName="semestre" autocomplete="off">
           </input-container>
         </div>
 
       </div>
+    </fieldset>
+
+    <fieldset><legend>Ementa</legend>
+      <div class="row">
+        <div class="col-xs-12">
+          <input-container label="Ementa">
+            <textarea class="form-control" placeholder="Ementa" formControlName="ementa" rows="7"></textarea>
+          </input-container>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset><legend>Justificativa</legend>
+      <div class="row">
+        <div class="col-xs-12">
+          <input-container label="Justificativa">
+            <textarea class="form-control" placeholder="Justificativa" formControlName="justificativa" rows="7"></textarea>
+          </input-container>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset><legend>Objetivos</legend>
+      <div class="row">
+        <div class="col-xs-12">
+          <input-container label="Objetivos Específicos">
+            <textarea class="form-control" placeholder="Objetivos Específicos" formControlName="objetivos" rows="7"></textarea>
+          </input-container>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset><legend>Competências e Habilidades</legend>
+      <div class="row">
+        <div class="col-xs-12">
+          <input-container label="Pré-textual">
+            <textarea class="form-control" placeholder="Elementos Pré-textuais" formControlName="competenciaPreTextual" rows="3"></textarea>
+          </input-container>
+        </div>
+
+        <div class="col-xs-12">
+          <input-container label="Habilidades e Competências Pessoais">
+            <textarea class="form-control" placeholder="Habilidades e Competências Pessoais" formControlName="competenciaPessoal" rows="5"></textarea>
+          </input-container>
+        </div>
+
+        <div class="col-xs-12">
+          <input-container label="Habilidades e Competências Interpessoais">
+            <textarea class="form-control" placeholder="Habilidades e Competências Interpessoais" formControlName="competenciaInterpessoal" rows="5"></textarea>
+          </input-container>
+        </div>
+
+        <div class="col-xs-12">
+          <input-container label="Habilidades e Competências Técnicas">
+            <textarea class="form-control" placeholder="Habilidades e Competências Técnicas" formControlName="competenciaTecnica" rows="5"></textarea>
+          </input-container>
+        </div>
+
+        <div class="col-xs-12">
+          <input-container label="Elementos Pós-textuais">
+            <textarea class="form-control" placeholder="Elementos Pós-textuais" formControlName="competenciaPosTextual" rows="3"></textarea>
+          </input-container>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset><legend>Interdisciplinaridade</legend>
+      <div class="row">
+        <div class="col-xs-12">
+          <input-container label="Elementos Pré-textuais">
+            <textarea class="form-control" placeholder="Elementos Pré-textuais" formControlName="interPreTextual" rows="3"></textarea>
+          </input-container>
+        </div>
+
+        <div class="col-xs-12">
+          <input-container label="Interdisciplinaridade">
+            <textarea class="form-control" placeholder="Interdisciplinaridade" formControlName="interdisciplinaridade" rows="7"></textarea>
+          </input-container>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset><legend>Conteúdo Programático</legend>
+      <div class="row">
+        <div class="col-xs-12">
+          <input-container label="Unidades Didáticas">
+            <textarea class="form-control" placeholder="Unidades Didáticas" formControlName="unidadeDidatica" rows="5"></textarea>
+          </input-container>
+        </div>
+
+        <div class="col-xs-12">
+          <input-container label="Cronograma de Aulas">
+            <textarea class="form-control" placeholder="Cronograma de Aulas" formControlName="cronogramaAulas" rows="5"></textarea>
+          </input-container>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset><legend>Desenvolvimento Metodológico</legend>
+      <div class="row">
+        <div class="col-xs-12">
+          <input-container label="Desenvolvimento Metodológico">
+            <textarea class="form-control" placeholder="Desenvolvimento Metodológico" formControlName="desenvolvimento" rows="7"></textarea>
+          </input-container>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset><legend>Avaliação</legend>
+      <div class="row">
+        <div class="col-xs-12">
+          <input-container label="Elementos Pré-textuais">
+            <textarea class="form-control" placeholder="Elementos Pré-textuais" formControlName="avaliacaoPreTextual" rows="3"></textarea>
+          </input-container>
+        </div>
+
+        <div class="col-xs-12">
+          <input-container label="Primeira Verificação de Aprendizagem">
+            <textarea class="form-control" placeholder="Primeira Verificação de Aprendizagem" formControlName="primeiraVa" rows="2"></textarea>
+          </input-container>
+        </div>
+
+        <div class="col-xs-12">
+          <input-container label="Segunda Verificação de Aprendizagem">
+            <textarea class="form-control" placeholder="Segunda Verificação de Aprendizagem" formControlName="segundaVa" rows="2"></textarea>
+          </input-container>
+        </div>
+
+        <div class="col-xs-12">
+          <input-container label="Terceira Verificação de Aprendizagem">
+            <textarea class="form-control" placeholder="Terceira Verificação de Aprendizagem" formControlName="terceiraVa" rows="2"></textarea>
+          </input-container>
+        </div>
+
+        <div class="col-xs-12">
+          <input-container label="Observações">
+            <textarea class="form-control" placeholder="Observações" formControlName="observacoes" rows="3"></textarea>
+          </input-container>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset><legend>Bibliografia</legend>
+      <div class="row">
+        <div class="col-xs-12">
+          <input-container label="Bibliografia Básica">
+            <textarea class="form-control" placeholder="Bibliografia Básica" formControlName="biblioBasica" rows="5"></textarea>
+          </input-container>
+        </div>
+
+        <div class="col-xs-12">
+          <input-container label="Bibliografia Complementar">
+            <textarea class="form-control" placeholder="Bibliografia Complementar" formControlName="biblioComplementar" rows="5"></textarea>
+          </input-container>
+        </div>
+      </div>
+    </fieldset>
+
     </div>
     <div class="panel-footer">
       <button (click)="salvar(planoDeEnsinoForm.value)" [disabled]="!planoDeEnsinoForm.valid" class="btn btn-success">

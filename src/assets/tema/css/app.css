@@ -1,0 +1,303 @@
+html {
+    font-family: sans-serif;
+}
+
+fieldset {
+    /*margin: 0px 10px;*/
+    margin-top: 10px;
+}
+
+.verde {
+    color: green;
+}
+
+.asterisco {
+    color: red;
+    font-size: 80%;
+}
+
+.mainconteiner {
+    background-color: #DDD;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+}
+
+.maincontent {
+    background-color: #FFF;
+    margin: 0px 3px;
+    height: 100%;
+    padding: 10px 10px;
+}
+
+.title {
+    font-size: 150%;
+    padding: 10px 10px;
+}
+
+.obrigatorio {
+    color: red;
+    float: right;
+    font-size: 60%;
+    margin-top: 8px;
+}
+
+.footer {
+    font-size: 150%;
+    padding: 10px 10px;
+    height: 33px;
+}
+
+.linha {
+    padding: 4px 0px;
+}
+
+.texto {
+    width: 40%;
+    border-bottom: 1px dotted;
+    float: left;
+}
+
+.campo {
+    margin-left: 10px;
+    width: 40%;
+    border-left: 3px solid;
+}
+
+
+.gradiente {
+    background: #DDD; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#FFF, #DDD); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#FFF, #DDD); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#FFF, #DDD); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#FFF, #DDD); /* Standard syntax (must be last) */
+}
+
+#salvar {
+    background: url('../img/salvar.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 32px;
+    border: 0;
+    padding-right: 36px;
+    color: green;
+    font-weight: bold;
+    cursor: pointer;
+    float: right;
+}
+
+#voltar {
+    background: url('../img/voltar.png');
+    background-repeat: no-repeat;
+    height: 32px;
+    border: 0;
+    padding-left: 36px;
+    color: green;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#pesquisar {
+    background: url('../img/pesquisar.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 32px;
+    border: 0;
+    padding-right: 36px;
+    color: green;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#limpar {
+    background: url('../img/limpar.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 32px;
+    border: 0;
+    padding-right: 36px;
+    color: green;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#novo {
+    background: url('../img/novo.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 32px;
+    border: 0;
+    padding-right: 36px;
+    color: green;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#alterar {
+    background: url('../img/alterar.png');
+    background-repeat: no-repeat;
+    height: 32px;
+    width: 32px;
+    border: 0;
+    cursor: pointer;
+}
+
+#excluir {
+    background: url('../img/limpar.png');
+    background-repeat: no-repeat;
+    height: 32px;
+    width: 32px;
+    border: 0;
+    cursor: pointer;
+}
+
+.erro {
+    color: red;
+    font-size: 13px;
+}
+
+/* Campo inválido angular
+input.ng-invalid.ng-dirty {
+    border-color: red;
+}*/
+
+
+/***********************************/
+/* TABELA */
+table {
+    width: 100%;
+    max-width: 100%;
+}
+
+th {
+    background-color: #DDD;
+}
+
+td {
+}
+
+td#descricao {
+    /*width: 40%;*/
+}
+
+td#sigla {
+    /*width: 10%;*/
+    text-align: center;
+}
+
+td#email {
+    /*width: 20%;*/
+}
+
+td#url {
+    /*width: 30%;*/
+}
+
+td#status {
+    /*width: 12%;*/
+    text-align: center;
+}
+
+td#acoes {
+    /*width: 8%*/
+    text-align: center;
+}
+
+/***********************************/
+
+/***********************************************************
+**********              dirPagination             **********
+***********************************************************/
+.my-controller {
+  border: 1px solid #fcc;
+  padding: 5px;
+  margin: 3px;
+}
+.my-controller small {
+  color: #c99;
+}
+.other-controller {
+  border: 1px solid #ccf;
+  padding: 5px;
+  margin: 3px;
+}
+.other-controller small {
+  color: #99c;
+}
+.third-controller {
+  border: 1px solid #cfc;
+  padding: 5px;
+  margin: 3px;
+}
+.third-controller small {
+  color: #9c9;
+}
+
+/*****************************/
+#paginacao   ul {
+list-style: none !important;
+margin: 10px;
+/*padding: 10px;*/
+display: inline;
+background-color: whitesmoke;
+width: auto;
+text-align: center;
+/*float: right;
+margin-right: 30%;*/
+}
+#paginacao li{
+float:left;
+/*padding:1px 1px;*/
+list-style-type:none;
+background-color: white;
+width: 32px;
+border: 2px;
+border-color: black;
+    background: #FFF;
+    margin: 1px;
+    min-width: 70px;
+    border-top-width: 3px;
+    border-top-color: blue;
+    border-top-style: solid;
+}
+
+#paginacao{
+    margin-top: 10px;
+    background: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 1145px;
+    min-height: 27px;
+    font-weight: bold;
+    color: #2d5fa9;
+    border-width: 1px;
+    border-style: solid;
+    border-color: gray;
+}
+
+#paginacao li:last-child,
+#paginacao li:first-child,
+#paginacao li:nth-child(2),
+#paginacao li:nth-last-child(2){
+    background: #eaf0f8;
+    color: #000;
+    border-width: 1px;
+    border-style: solid;
+    border-color: gray;
+    height: 21px;
+}
+
+#paginacao .active{
+    border-top-color: #000;
+    color: #000;
+}
+
+#paginacao a {
+    text-decoration: none;
+    color: inherit;
+}
+/*#paginacao a:link {text-decoration: none}
+#paginacao a:visited {text-decoration: none}
+#paginacao a:hover {text-decoration: none}*/

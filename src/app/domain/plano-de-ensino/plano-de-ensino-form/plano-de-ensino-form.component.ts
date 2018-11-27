@@ -52,7 +52,36 @@ export class PlanoDeEnsinoFormComponent implements OnInit {
       periodo: [null, [Validators.required, Validators.maxLength(50)]],
       turno: [null, [Validators.required, Validators.maxLength(20)]],
       ano: [null, [Validators.required, Validators.maxLength(50)]],
-      semestre: [null, [Validators.required, Validators.maxLength(50)]]
+      semestre: [null, [Validators.required, Validators.maxLength(50)]],
+
+      ementa: [],
+
+      justificativa: [],
+
+      objetivos: [],
+
+      competenciaPreTextual: [],
+      competenciaPessoal: [],
+      competenciaInterpessoal: [],
+      competenciaTecnica: [],
+      competenciaPosTextual: [],
+
+      interPreTextual: [],
+      interdisciplinaridade: [],
+
+      unidadeDidatica: [],
+      cronogramaAulas: [],
+
+      desenvolvimento: [],
+
+      avaliacaoPreTextual: [],
+      primeiraVa: [],
+      segundaVa: [],
+      terceiraVa: [],
+      observacoes: [],
+
+      biblioBasica: [],
+      biblioComplementar: []
     }, {});
 
     // Se existir `ID` realiza busca para trazer os dados

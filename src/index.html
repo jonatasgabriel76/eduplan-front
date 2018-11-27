@@ -4,6 +4,7 @@
     <!-- Basic -->
     <meta charset="UTF-8">
     <title>Eduplan</title>
+
     <base href="/">
 
     <!-- Mobile Metas -->
@@ -15,8 +16,63 @@
     <!-- Skin CSS -->
     <link rel="stylesheet" href="assets/css/skins/default.min.css"/>
 
+
+    <link rel="stylesheet" href="assets/tema/lib/snackbarjs/dist/snackbar.min.css" />
+
+    <link rel="stylesheet" href="assets/tema/lib/snackbarjs/themes-css/material.css" />
+        
+    <link rel="stylesheet" type="text/css" id="theme" href="assets/tema/css/theme-default.css"/>
+
   </head>
   <body>
     <app-root></app-root>
+
+            <!-- START PRELOADS -->
+        <audio id="audio-alert" src="assets/tema/audio/alert.mp3" preload="auto"></audio>
+        <audio id="audio-fail" src="assets/tema/audio/fail.mp3" preload="auto"></audio>
+        <!-- END PRELOADS -->
+
+        <!-- START PRELOADS -->
+        <audio id="audio-alert" src="assets/tema/audio/alert.mp3" preload="auto"></audio>
+        <audio id="audio-fail" src="assets/tema/audio/fail.mp3" preload="auto"></audio>
+        <!-- END PRELOADS -->                       
+        
+    <!-- START SCRIPTS -->
+        <!-- START PLUGINS -->
+        <script src="assets/tema/lib/jquery-3.2.1.min.js"></script>
+       
+        <script type="text/javascript" src="assets/tema/js/plugins/jquery/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="assets/tema/js/plugins/bootstrap/bootstrap.min.js"></script>        
+        <!-- END PLUGINS -->                
+
+        <!-- THIS PAGE PLUGINS -->
+        <script type='text/javascript' src='assets/tema/js/plugins/icheck/icheck.min.js'></script>
+        <script type="text/javascript" src="assets/tema/js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js"></script>
+        
+        <script type="text/javascript" src="assets/tema/js/plugins/datatables/jquery.dataTables.min.js"></script>    
+        <!-- END PAGE PLUGINS -->
+
+        <!-- START TEMPLATE -->
+        <script type="text/javascript" src="assets/tema/js/settings.js"></script>
+        
+        <script type="text/javascript" src="assets/tema/js/plugins.js"></script>        
+        <script type="text/javascript" src="assets/tema/js/actions.js"></script>        
+        <!-- END TEMPLATE -->
+    <!-- END SCRIPTS --> 
+        <script src="assets/tema/lib/snackbarjs/dist/snackbar.min.js"></script>
+
+        <!-- MomentJS -->
+        <script src="assets/tema/lib/momentjs/moment-with-locales.min.js"></script>
+        
+        <!-- AngularJS -->
+        <script src="assets/tema/js/angular/angular.min.js"></script>
+        <script src="assets/tema/js/angular/angular-route.min.js"></script>
+        <script src="assets/tema/js/angular/angular-locale_pt-br.js"></script>
+        <script src="assets/tema/js/app.js"></script>
+        <script src="assets/tema/js/route.js"></script>
+        
+        <!-- dirPagination -->
+        <script src="assets/tema/lib/angularUtils/dirPagination/dirPagination.js"></script>
+
   </body>
 </html>
